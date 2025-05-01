@@ -53,7 +53,13 @@ dependencies {
 
 ```
 
-Library is available in jcenter repository, probably it'll be in Maven Central soon.
+📢 Duplicate class found Error
+
+``` gradle.properties (Project Properties)
+
+android.enableJetifier=true
+
+```
 
 ## 🔒 ProGuard Configuration
 
