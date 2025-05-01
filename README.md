@@ -53,6 +53,7 @@ dependencies {
 
 ```
 
+
 📢 Duplicate class found Error
 
 ``` gradle.properties (Project Properties)
@@ -60,6 +61,7 @@ dependencies {
 android.enableJetifier=true
 
 ```
+
 
 ## 🔒 ProGuard Configuration
 
