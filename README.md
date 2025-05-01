@@ -5,16 +5,6 @@ A powerful and feature-rich Android library for displaying PDF documents with sm
 
 [![](https://jitpack.io/v/Tuhinx/pdf-viewer-android.svg)](https://jitpack.io/#Tuhinx/pdf-viewer-android)
 
-## 🚀 Features
-
-- 📱 Smooth animations and gestures
-- 🔍 Zoom and double tap support
-- 📄 Multiple page display options
-- 🎯 Customizable scroll handles
-- 🔗 Link handling support
-- 🌙 Night mode support
-- 📏 Multiple page fit policies
-- 🎨 High-quality bitmap rendering
 
 ## 📦 Installation
 
