@@ -44,9 +44,11 @@ dependencies {
 ```
 
 
-📢 Duplicate class found Error
+ ## Duplicate class found Error
 
-``` gradle.properties (Project Properties)
+ Use in gradle.properties (Project Properties) file 
+
+``` all
 
 android.enableJetifier=true
 
