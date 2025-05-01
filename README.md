@@ -32,6 +32,8 @@ dependencies {
     implementation 'com.github.Tuhinx:pdf-viewer-android:3.0.0'
 }
 
+```
+
 ## For Kotlin
 
 ```gradle.kts
