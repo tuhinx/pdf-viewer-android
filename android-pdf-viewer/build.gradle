@@ -48,3 +48,8 @@ publishing {
         }
     }
 }
+
+// Ensure the AAR is built before publishing
+tasks.named('publishReleasePublicationToMavenLocal') {
+    dependsOn tasks.named('bundleReleaseAar')
+}
