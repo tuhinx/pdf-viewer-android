@@ -2,7 +2,7 @@
 
 A powerful and feature-rich Android library for displaying PDF documents with smooth animations, gestures, zoom, and double tap support. Built on top of [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for PDF decoding. Compatible with API 15 (Android 4.0) and higher.
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![](https://jitpack.io/v/Tuhinx/pdf-viewer-android.svg)](https://jitpack.io/#Tuhinx/pdf-viewer-android)
 
 ## 🚀 Features
 
@@ -32,7 +32,7 @@ dependencies {
     implementation 'com.github.Tuhinx:pdf-viewer-android:3.0.0'
 }
 
-
+## For Kotlin
 
 ```gradle.kts
 	dependencyResolutionManagement {
@@ -43,7 +43,6 @@ dependencies {
 		}
 	}
 
-## For Kotlin
 
 dependencies {
     implementation("com.github.Tuhinx:pdf-viewer-android:3.0.0")
