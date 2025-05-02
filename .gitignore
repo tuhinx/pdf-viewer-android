@@ -32,6 +32,9 @@ signing.properties
 # Crashlytics/Analytics
 fabric.properties
 
+android-pdf-viewer/
+/android-pdf-viewer/
+
 # Log/Backup files
 *.log
 *.bak
