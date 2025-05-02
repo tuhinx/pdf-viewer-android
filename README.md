@@ -8,7 +8,7 @@ A powerful and feature-rich Android library for displaying PDF documents with sm
 
 ## 📦 Installation
 
-### Gradle
+### For Gradle
 
 ```groovy
 dependencyResolutionManagement {
@@ -44,7 +44,7 @@ dependencies {
 ```
 
 
- ## Duplicate class found Error
+ ## If Duplicate class found Error
 
  Use in gradle.properties (Project Properties) file 
 
