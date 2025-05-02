@@ -44,7 +44,7 @@ dependencies {
 ```
 
 
- ## If Duplicate class found Error
+ ## 👉 If Duplicate class found Error
 
  Use in gradle.properties (Project Properties) file 
 
