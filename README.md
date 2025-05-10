@@ -20,7 +20,7 @@ dependencyResolutionManagement {
 	}
 
 dependencies {
-    implementation 'com.github.Tuhinx:pdf-viewer-android:3.0.0'
+    implementation 'com.github.Tuhinx:pdf-viewer-android:3.0.1'
 }
 
 ```
@@ -38,15 +38,15 @@ dependencies {
 
 
 dependencies {
-    implementation("com.github.Tuhinx:pdf-viewer-android:3.0.0")
+    implementation("com.github.Tuhinx:pdf-viewer-android:3.0.1")
 }
 
 ```
 
 
- ## 👉 If Duplicate class found Error
+## 👉 If Duplicate class found Error
 
- Use in gradle.properties (Project Properties) file 
+Use in gradle.properties (Project Properties) file
 
 ``` all
 
@@ -69,9 +69,9 @@ If you are using ProGuard, add following rule to proguard config file:
 
 ```xml
 <com.github.pdfviewer.PDFView
-        android:id="@+id/pdfView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    android:id="@+id/pdfView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 ```
 
 ### 2. Load a PDF file
@@ -95,9 +95,9 @@ pdfView.fromAsset(String)
     .swipeHorizontal(false)
     .enableDoubletap(true)
     .defaultPage(0)
-    // allows to draw something on the current page, usually visible in the middle of the screen
+// allows to draw something on the current page, usually visible in the middle of the screen
     .onDraw(onDrawListener)
-    // allows to draw something on all pages, separately for every page. Called only for visible pages
+// allows to draw something on all pages, separately for every page. Called only for visible pages
     .onDrawAll(onDrawListener)
     .onLoad(onLoadCompleteListener) // called after document is loaded and starts to be rendered
     .onPageChange(onPageChangeListener)
@@ -105,14 +105,14 @@ pdfView.fromAsset(String)
     .onError(onErrorListener)
     .onPageError(onPageErrorListener)
     .onRender(onRenderListener) // called after document is rendered for the first time
-    // called on single tap, return true if handled, false to toggle scroll handle visibility
+// called on single tap, return true if handled, false to toggle scroll handle visibility
     .onTap(onTapListener)
     .onLongPress(onLongPressListener)
     .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
     .password(null)
     .scrollHandle(null)
     .enableAntialiasing(true) // improve rendering a little bit on low-res screens
-    // spacing between pages in dp. To define spacing color, set view background
+// spacing between pages in dp. To define spacing color, set view background
     .spacing(0)
     .autoSpacing(false) // add dynamic spacing to fit each page on its own on the screen
     .linkHandler(DefaultLinkHandler)
