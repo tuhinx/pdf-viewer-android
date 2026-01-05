@@ -20,7 +20,7 @@ dependencyResolutionManagement {
 	}
 
 dependencies {
-    implementation 'com.github.tuhinx:pdf-viewer-android:3.0.2'
+    implementation 'com.github.tuhinx:pdf-viewer-android:3.0.3'
 }
 
 ```
@@ -38,7 +38,7 @@ dependencies {
 
 
 dependencies {
-    implementation("com.github.tuhinx:pdf-viewer-android:3.0.2")
+    implementation("com.github.tuhinx:pdf-viewer-android:3.0.3")
 }
 
 ```
