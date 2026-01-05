@@ -15,8 +15,6 @@
 
 ---
 
-[![](https://jitpack.io/v/tuhinx/pdf-viewer-android.svg)](https://jitpack.io/#tuhinx/pdf-viewer-android)
-
 ## 📋 Table of Contents
 - [Installation](#-installation)
 - [Usage](#-usage)
