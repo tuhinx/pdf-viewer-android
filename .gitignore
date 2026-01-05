@@ -33,7 +33,7 @@ signing.properties
 fabric.properties
 
 
-/android-pdf-viewer/
+#/android-pdf-viewer/
 
 
 # Log/Backup files
