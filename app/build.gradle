@@ -4,11 +4,13 @@ plugins {
 
 android {
     namespace 'com.pdfviewer.tuhinx'
+    //noinspection GradleDependency
     compileSdk 34
 
     defaultConfig {
         applicationId "com.pdfviewer.tuhinx"
         minSdk 21
+        //noinspection OldTargetApi
         targetSdk 34
         versionCode 3
         versionName "3"
