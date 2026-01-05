@@ -1,10 +1,31 @@
 # 📚 Android PDF Viewer
 
+<p align="center">
+  <strong><i>A powerful and feature-rich Android library for displaying PDF documents</i></strong><br>
+  <i>with smooth animations, gestures, zoom, and double tap support</i>
+</p>
 
-A powerful and feature-rich Android library for displaying PDF documents with smooth animations, gestures, zoom, and double tap support. Built on top of [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for PDF decoding. Compatible with API 15 (Android 4.0) and higher.
+<p align="center">
+  <img src="https://img.shields.io/badge/API-15+-green.svg" alt="API Level">
+  <img src="https://img.shields.io/badge/License-Apache--2.0-blue.svg" alt="License">
+  <img src="https://jitpack.io/v/tuhinx/pdf-viewer-android.svg" alt="JitPack">
+</p>
 
-[![](https://jitpack.io/v/Tuhinx/pdf-viewer-android.svg)](https://jitpack.io/#tuhinx/pdf-viewer-android)
+> 💼 Built on top of [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for PDF decoding. Compatible with API 15 (Android 4.0) and higher.
 
+---
+
+[![](https://jitpack.io/v/tuhinx/pdf-viewer-android.svg)](https://jitpack.io/#tuhinx/pdf-viewer-android)
+
+## 📋 Table of Contents
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Features](#-features)
+- [Configuration](#-configuration)
+- [Tips & Tricks](#-tips--tricks)
+- [License](#-license)
+
+---
 
 ## 📦 Installation
 
@@ -25,7 +46,7 @@ dependencies {
 
 ```
 
-## For Kotlin
+### For Kotlin
 
 ```gradle.kts
 	dependencyResolutionManagement {
@@ -43,25 +64,23 @@ dependencies {
 
 ```
 
+### 🚨 Duplicate Class Error Fix
 
-## 👉 If Duplicate class found Error
-
-Use in gradle.properties (Project Properties) file
-
-``` all
-
-android.enableJetifier=true
+If you encounter duplicate class errors, add this to your gradle.properties file:
 
 ```
+android.enableJetifier=true
+```
 
+### 🔒 ProGuard Configuration
 
-## 🔒 ProGuard Configuration
-
-If you are using ProGuard, add following rule to proguard config file:
+If you are using ProGuard, add the following rule to your proguard config file:
 
 ```proguard
 -keep class com.shockwave.**
 ```
+
+---
 
 ## 🛠️ Usage
 
@@ -124,9 +143,13 @@ pdfView.fromAsset(String)
     .load();
 ```
 
-- `pages` is optional, it allows you to filter and order the pages of the PDF as you need
+> 💡 **Note**: `pages` is optional, it allows you to filter and order the pages of the PDF as you need
 
-## 📜 Scroll Handle
+---
+
+## ⚙️ Features
+
+### 📜 Scroll Handle
 
 Scroll handle is a replacement for **ScrollBar** from 1.x branch.
 
@@ -156,14 +179,14 @@ pdfView.fromAsset(String)
 
 Custom providers may be used with `pdfView.fromSource(DocumentSource)` method.
 
-## 🔗 Link Handling
+### 🔗 Link Handling
 
 Version 4.0.0 introduced support for links in PDF documents. By default, **DefaultLinkHandler** is used:
 
-- Clicking on a link that references a page in the same document jumps to the destination page
-- Clicking on a link that targets a URI opens it in the default application
+- 📄 Clicking on a link that references a page in the same document jumps to the destination page
+- 🌐 Clicking on a link that targets a URI opens it in the default application
 
-## 📐 Page Fit Policies
+### 📐 Page Fit Policies
 
 Library supports three page fitting modes:
 
@@ -175,9 +198,11 @@ Apart from selected policy, every page is scaled to have size relative to other 
 
 Fit policy can be set using `Configurator#pageFitPolicy(FitPolicy)`. Default policy is **WIDTH**.
 
+---
+
 ## 💡 Tips & Tricks
 
-### Bitmap Quality
+### 🖼️ Bitmap Quality
 
 By default, bitmaps are compressed with `RGB_565` format. Force `ARGB_8888` rendering with:
 
@@ -185,7 +210,7 @@ By default, bitmaps are compressed with `RGB_565` format. Force `ARGB_8888` rend
 pdfView.useBestQuality(true)
 ```
 
-### Double Tap Zooming
+### 🔍 Double Tap Zooming
 
 Three zoom levels:
 
@@ -201,7 +226,7 @@ void setMidZoom(float zoom);
 void setMaxZoom(float zoom);
 ```
 
-### ViewPager-like Scrolling
+### 📱 ViewPager-like Scrolling
 
 Use these settings for ViewPager-like behavior:
 
@@ -212,16 +237,18 @@ Use these settings for ViewPager-like behavior:
 .pageFling(true)
 ```
 
-### Why I cannot open PDF from URL?
+### ❓ FAQ
 
-Downloading files is long running process which must be aware of Activity lifecycle, must support some configuration,
+#### Why I cannot open PDF from URL?
+
+Downloading files is a long running process which must be aware of Activity lifecycle, must support some configuration,
 data cleanup and caching, so creating such module will probably end up as new library.
 
-### How can I show last opened page after configuration change?
+#### How can I show last opened page after configuration change?
 
 You have to store current page number and then set it with `pdfView.defaultPage(page)`, refer to sample app
 
-### How can I fit document to screen width (eg. on orientation change)?
+#### How can I fit document to screen width (eg. on orientation change)?
 
 Use `FitPolicy.WIDTH` policy or add following snippet when you want to fit desired page in document with different page sizes:
 
@@ -233,6 +260,8 @@ Configurator.onRender(new OnRenderListener() {
     }
 });
 ```
+
+---
 
 ## 📝 License
 
